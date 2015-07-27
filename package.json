@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/AlexanderTserkovniy/reminder",
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "modernizr": "^3.0.0-alpha.4"
   }
 }
