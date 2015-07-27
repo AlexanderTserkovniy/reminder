@@ -1,5 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+module.exports = (function() {
     var method;
     var noop = function () {};
     var methods = [
