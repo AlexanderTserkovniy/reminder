@@ -1,0 +1,27 @@
+{
+  "name": "reminder",
+  "version": "0.0.0",
+  "description": "Simple reminder of something",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexanderTserkovniy/reminder.git"
+  },
+  "keywords": [
+    "reminder",
+    "js",
+    "searchable"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderTserkovniy/reminder/issues"
+  },
+  "homepage": "https://github.com/AlexanderTserkovniy/reminder",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
