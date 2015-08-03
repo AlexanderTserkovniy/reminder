@@ -44,20 +44,38 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objRequired = __webpack_require__(1);
+	__webpack_require__(1);
+	alert('Test');
 
-	objRequired.b = false;
-
-	console.log(objRequired);
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	// Avoid `console` errors in browsers that lack a console.
-	var obj = {a:true};
+	module.exports = (function() {
+	    var method;
+	    var noop = function () {};
+	    var methods = [
+	        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+	        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+	        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+	        'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+	    ];
+	    var length = methods.length;
+	    var console = (window.console = window.console || {});
 
-	module.exports = obj;
+	    while (length--) {
+	        method = methods[length];
+
+	        // Only stub undefined methods.
+	        if (!console[method]) {
+	            console[method] = noop;
+	        }
+	    }
+	}());
+
+	// Place any jQuery/helper plugins in here.
 
 /***/ }
 /******/ ]);
