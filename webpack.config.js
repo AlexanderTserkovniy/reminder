@@ -1,7 +1,12 @@
 module.exports = {
-    entry: "./js/main.js",
-    output: {
-        path: __dirname + "/js/",
-        filename: "bundle.js"
-    }
+  entry: "./src/entry.js",
+  output: {
+    path: "./dist/js/",
+    filename: "bundle.js"
+  },
+  module: {
+    loaders: [
+      {test: /\.scss$/, loaders: ["style", "css", "sass"]}
+    ]
+  }
 };
