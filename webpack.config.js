@@ -1,12 +1,24 @@
 module.exports = {
   entry: "./src/entry.js",
   output: {
-    path: "./dist/js/",
-    filename: "bundle.js"
+    path: "./dist/",
+    filename: "js/bundle.js"
   },
   module: {
     loaders: [
-      {test: /\.scss$/, loaders: ["style", "css", "sass"]}
+      {
+        test: /\.scss$/,
+        loader: "style!css!sass"
+      },
+      {
+        test: /\.css$/,
+        loader: "style!css"
+      },
+      {
+        test: /\.js$/,
+        loader: "babel",
+        exclude: "/node_modules/"
+      }
     ]
   }
 };
