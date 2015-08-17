@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i -g webpack-dev-server & webpack & webpack-dev-server --content-base dist/"
+    "begin": "npm i -g webpack-dev-server & webpack & webpack-dev-server --content-base dist/",
+    "start": "webpack & webpack-dev-server --content-base dist/"
   },
   "repository": {
     "type": "git",
