@@ -3,13 +3,9 @@
  * kemperomg@gmail.com
  */
 
-let abc = 25;
-
 function routing($urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
-
-  console.log(`I am ${abc}`); // 'I am ' + abc
 }
 
 routing.$inject = ['$urlRouterProvider', '$locationProvider'];

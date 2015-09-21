@@ -8,13 +8,16 @@ import uirouter from 'angular-ui-router';
 
 import routing from './app.config';
 
-console.log(typeof abc);
+import main from './main/main.module.js';
 
-angular.module('app', [uirouter])
-  .config(routing)
-  .directive('testTest', function () {
-    return {
-      template: '<div>Hello!</div>',
-      replace: true
-    }
-  });
+angular.module('app', [
+    uirouter,
+    main
+])
+    .config(routing)
+    .directive('testTest', function () {
+        return {
+            template: '<div>Hello!</div>',
+            replace: true
+        };
+    });
